@@ -348,7 +348,9 @@ public class AudioPlayer implements OnCompletionListener, OnPreparedListener, On
         // Listen for playback completion
         this.player.setOnCompletionListener(this);
         // seek to any location received while not prepared
-        this.seekToPlaying(this.seekOnPrepared);
+        // HACK: the following call causes issues on Android 5.x and 6.x
+        //       when a live stream is set as input.
+        // this.seekToPlaying(this.seekOnPrepared);
         // If start playing after prepared
         if (!this.prepareOnly) {
             this.player.start();
