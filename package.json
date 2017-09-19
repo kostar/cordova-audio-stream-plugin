@@ -1,0 +1,15 @@
+{
+	"name": "com.keosu.cordova.stream",
+	"version": "0.1.0",
+	"cordova": {
+		"id": "com.keosu.cordova.stream",
+		"platforms": [
+			"android",
+			"ios"
+		]
+	},
+	"engines": {
+		"cordovaDependencies": {
+		}
+	}
+}
